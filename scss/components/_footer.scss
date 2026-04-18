@@ -1,0 +1,46 @@
+footer {
+	margin-top: 140px;
+	padding: 80px 0 120px;
+
+	.logo {
+		flex: 0 1 422px;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.container {
+		display: flex;
+		gap: 170px;
+		justify-content: space-between;
+	}
+
+	.lists {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		flex: 1 1 auto;
+		gap: 20px;
+	}
+
+	.list-title {
+		font-size: 24px;
+		font-weight: 700;
+		color: #5F5F5F;
+		margin-bottom: 10px;
+	}
+
+	.list-item {
+		font-size: 18px;
+
+		&:hover {
+			color: #0041B3;
+		}
+	}
+
+	.list {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+	}
+}

@@ -1,0 +1,49 @@
+%hide-scroll {
+	&::-webkit-scrollbar {
+		display: none;
+	}
+
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+%button-core {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: fit-content;
+
+	height: 54px;
+	padding: 0 40px;
+
+	font-size: 20px;
+	font-weight: 700;
+
+	border-radius: 100px;
+}
+
+%button-white {
+	@extend %button-core;
+	background: #F2F2F2;
+	color: #0041B3;
+}
+
+%button-blue {
+	@extend %button-core;
+	background: #0041B3;
+	color: white;
+}
+
+%bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+%h1 {
+	font-size: 48px;
+	font-weight: 600;
+}

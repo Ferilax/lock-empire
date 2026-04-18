@@ -1,0 +1,56 @@
+@import "fonts";
+@import "nullstyle";
+@import "vars";
+
+@import "abstracts/mixins";
+@import "abstracts/templates";
+
+@import "components/header";
+@import "components/footer";
+@import "components/arrows";
+
+.page_main {
+	@import "pages/main";
+}
+
+html {
+	&._lock-scroll {
+		overflow: hidden;
+		scrollbar-gutter: stable;
+		position: relative;
+
+		.mask {
+			opacity: 1;
+			pointer-events: visible;
+		}
+	}
+}
+
+body {
+	color: var(--black);
+	font-family: Manrope;
+	line-height: 1.2;
+}
+
+main {
+	margin-top: 40px;
+}
+
+.container {
+	max-width: 1920px;
+	padding: 0 var(--container-padding);
+	margin: auto;
+}
+
+.mask {
+	position: fixed;
+	width: 200%;
+	height: 200%;
+	top: 0;
+	left: 0;
+	background: #00000054;
+	z-index: var(--z-mask);
+	pointer-events: none;
+	opacity: 0;
+	transition: .3s;
+}

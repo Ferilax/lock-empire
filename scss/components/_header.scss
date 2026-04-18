@@ -1,0 +1,166 @@
+header {
+	margin-top: 40px;
+
+	&:has(.nav-menu-trigger:hover) {
+		.nav-menu {
+			opacity: 1;
+			visibility: visible;
+			translate: -50%;
+		}
+	}
+
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.logo {
+
+		img {
+			height: 73px;
+		}
+	}
+
+	.nav {
+		flex: 0 1 auto;
+		display: flex;
+		gap: 40px;
+
+		align-items: center;
+	}
+
+	.actions {
+		display: flex;
+		justify-content: end;
+		gap: 12px;
+	}
+
+	.nav-menu-trigger {
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+	}
+
+	.link {
+		font-size: 20px;
+		color: #696969;
+	}
+
+	.search {
+		display: flex;
+		align-items: center;
+		background: #F2F2F2;
+		padding: 0 24px;
+		border-radius: 100px;
+
+		input {
+			width: 140px;
+			height: 54px;
+			font-weight: 700;
+			font-size: 20px;
+			background: transparent;
+			padding-right: 12px;
+
+			&::placeholder {
+				color: #A7A7A7;
+			}
+		}
+	}
+
+	.basket {
+		position: relative;
+
+		span {
+			right: 3px;
+			top: 3px;
+			color: white;
+			background: #E31C1C;
+			padding: 0 7px;
+			height: 24px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 50%;
+			position: absolute;
+			font-weight: 700;
+		}
+	}
+
+	.person,
+	.basket {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 54px;
+		height: 54px;
+		border-radius: 50%;
+		background: #F2F2F2;
+	}
+
+	.nav-menu {
+		opacity: 0;
+		visibility: hidden;
+		translate: -50% 40px;
+		transition: .3s;
+
+		width: 1548px;
+		position: absolute;
+		z-index: var(--z-header);
+		top: 123px;
+		left: 50%;
+
+		background: #F2F2F2;
+		border-radius: 18px;
+
+		padding: 48px;
+		display: flex;
+		gap: 40px;
+
+		&:hover {
+			opacity: 1;
+			visibility: visible;
+			translate: -50%;
+		}
+
+		&::after {
+			top: -40px;
+			left: 0;
+			width: 100%;
+			position: absolute;
+			content: "";
+			height: 40px;
+		}
+	}
+
+	.group {
+		flex: 0 1 260px;
+
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+	}
+
+	.group-title {
+		font-size: 24px;
+		font-weight: 700;
+		margin-bottom: 8px;
+		grid-column: span 2;
+	}
+
+	.group-link {
+		font-size: 20px;
+		color: #696969;
+		align-self: start;
+
+		&:hover {
+			color: #0041B3;
+		}
+	}
+
+	._double {
+		flex: 0 1 552px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
