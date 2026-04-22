@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Каталог</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/splide-core.min.css">
+</head>
+
+<body class="page_catalog">
+	<header>
+		<div class="container">
+			<a href="index.html" class="logo">
+				<img src="images/logo.webp" alt="">
+			</a>
+			<nav class="nav">
+				<div href="" class="nav-menu-trigger link">
+					<span>Каталог</span>
+					<svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M25.5 12.75L17 21.25L8.5 12.75" stroke="#696969" />
+					</svg>
+				</div>
+				<a href="" class="link">О компании</a>
+				<a href="" class="link">Новости</a>
+				<a href="" class="link">Партнерам</a>
+				<a href="" class="link">Коллекции</a>
+				<a href="" class="link">Контакты</a>
+			</nav>
+			<div class="actions">
+				<label class="search">
+					<input type="text" placeholder="Найти товар">
+					<img src="images/icons/search.svg" alt="">
+				</label>
+				<a href="" class="basket">
+					<img src="images/icons/basket.svg" alt="">
+					<span>5</span>
+				</a>
+				<a href="" class="person">
+					<img src="images/icons/user.svg" alt="">
+				</a>
+			</div>
+
+			<section class="nav-menu">
+				<div class="group">
+					<h4 class="group-title">Дверные замки</h4>
+					<a href="" class="group-link">Накладные</a>
+					<a href="" class="group-link">Врезные</a>
+					<a href="" class="group-link">Защелки дверные</a>
+					<a href="" class="group-link">Навесные</a>
+					<a href="" class="group-link">Кодовые</a>
+				</div>
+				<div class="group">
+					<h4 class="group-title">Дверные ручки</h4>
+					<a href="" class="group-link">Раздельные</a>
+					<a href="" class="group-link">На планке</a>
+					<a href="" class="group-link">Скобы</a>
+					<a href="" class="group-link">Кнобы</a>
+					<a href="" class="group-link">Для раздвижных дверей</a>
+					<a href="" class="group-link">Кнопки</a>
+				</div>
+				<div class="group">
+					<h4 class="group-title">Фурнитура</h4>
+					<a href="" class="group-link">Петли</a>
+					<a href="" class="group-link">Шпингалеты, засовы</a>
+					<a href="" class="group-link">Задвижки дверные</a>
+					<a href="" class="group-link">Фурнитура к «антипанике»</a>
+				</div>
+				<div class="group _double">
+					<h4 class="group-title">Разное</h4>
+					<a href="" class="group-link">Механизмы секретности</a>
+					<a href="" class="group-link">Броненакладки</a>
+					<a href="" class="group-link">Накладки, wc-комплекты</a>
+					<a href="" class="group-link">Таблички информационные</a>
+					<a href="" class="group-link">Дверные доводчики</a>
+					<a href="" class="group-link">Цифры дверные</a>
+					<a href="" class="group-link">Оконная фурнитура</a>
+					<a href="" class="group-link">Кронштейны</a>
+					<a href="" class="group-link">Упоры дверные</a>
+					<a href="" class="group-link">Мебельная фурнитура</a>
+					<a href="" class="group-link">Крючки</a>
+					<a href="" class="group-link">Почтовые ящики</a>
+					<a href="" class="group-link">Почтовые замки</a>
+					<a href="" class="group-link">Перфорированный крепеж</a>
+					<a href="" class="group-link">Оптика</a>
+					<a href="" class="group-link">Разное</a>
+				</div>
+			</section>
+		</div>
+	</header>
+
+	<main>
+		<section class="catalog tab-system">
+			<div class="container">
+				<aside class="category">
+					<div class="head">
+						<button class="tab-trigger _active" data-tab="tab-1">Категории</button>
+						<button class="tab-trigger" data-tab="tab-2">Производители</button>
+					</div>
+					<div class="tab-content _active" data-tab="tab-1">
+						<div class="groups">
+							<div class="group">
+								<h4 class="group-title">Дверные замки</h4>
+								<button class="option">Накладные</button>
+								<button class="option">Врезные</button>
+								<button class="option">Защелки дверные</button>
+								<button class="option">Навесные</button>
+								<button class="option">Кодовые</button>
+							</div>
+							<div class="group">
+								<h4 class="group-title">Дверные ручки</h4>
+								<button class="option">Раздельные</button>
+								<button class="option">На планке</button>
+								<button class="option">Скобы</button>
+								<button class="option">Кнобы</button>
+								<button class="option">Для раздвижных дверей</button>
+								<button class="option">Кнопки</button>
+							</div>
+							<div class="group">
+								<h4 class="group-title">Фурнитура</h4>
+								<button class="option">Петли</button>
+								<button class="option">Шпингалеты, засовы</button>
+								<button class="option">Задвижки дверные</button>
+								<button class="option">Фурнитура к «антипанике»</button>
+							</div>
+							<div class="group">
+								<h4 class="group-title">Разное</h4>
+								<button class="option">Механизмы секретности</button>
+								<button class="option">Накладки, wc-комплекты</button>
+								<button class="option">Дверные доводчики</button>
+								<button class="option">Оконная фурнитура</button>
+								<button class="option">Упоры дверные</button>
+								<button class="option">Крючки</button>
+								<button class="option">Почтовые замки</button>
+								<button class="option">Оптика</button>
+								<button class="option">Броненакладки</button>
+								<button class="option">Таблички информационные</button>
+								<button class="option">Цифры дверные</button>
+								<button class="option">Кронштейны</button>
+								<button class="option">Мебельная фурнитура</button>
+								<button class="option">Почтовые ящики</button>
+								<button class="option">Перфорированный крепеж</button>
+								<button class="option">Разное</button>
+							</div>
+						</div>
+					</div>
+					<div class="tab-content" data-tab="tab-2">
+						<ul class="list">
+							<li class="option">AGB</li>
+							<li class="option">Amig (Испания)</li>
+							<li class="option">Apecs (Китай)</li>
+							<li class="option">ARMADILLO</li>
+							<li class="option">Avers</li>
+							<li class="option">Avers (Аверс)</li>
+							<li class="option">Avers (Китай)</li>
+							<li class="option">Avers (Россия)</li>
+							<li class="option">BORDER</li>
+							<li class="option">BORDER, г.Рязань</li>
+							<li class="option">Dorma</li>
+							<li class="option">FUARO</li>
+							<li class="option">KALE KILIT</li>
+							<li class="option">MOTTURA</li>
+							<li class="option">Mottura (Италия)</li>
+							<li class="option">SIBA</li>
+							<li class="option">TACIT</li>
+							<li class="option">TITAN (Словения)</li>
+							<li class="option">Vanger (Вангер)</li>
+							<li class="option">Vilardi</li>
+							<li class="option">Авангард, г.Москва</li>
+							<li class="option">Аллюр </li>
+							<li class="option">Барановичи</li>
+							<li class="option">Бриг</li>
+							<li class="option">Булат</li>
+							<li class="option">Вега-Люкс, г. Могилев</li>
+							<li class="option">г.Белгород</li>
+							<li class="option">г.Глазов</li>
+							<li class="option">г.Йошкар-Ола</li>
+							<li class="option">г.Череповец</li>
+							<li class="option">Гардиан, г.Йошкар-Ола</li>
+							<li class="option">Герион, г.Железнодорожный</li>
+							<li class="option">ДААЗ, г.Димитровград</li>
+							<li class="option">Делга, г.С.Петербург</li>
+							<li class="option">ЖЕЛЕЗНАЯ МАНУФАКТУРА УРАЛА</li>
+							<li class="option">Замки ЗАЗ (Украина)</li>
+							<li class="option">Замкофф</li>
+							<li class="option">Зенит, г.Димитровград</li>
+							<li class="option">ЗЦЛ, г.Курган</li>
+							<li class="option">Крит</li>
+							<li class="option">КЭМЗ, г.Калуга</li>
+							<li class="option">Металлист</li>
+							<li class="option">Меттэм, г.Балашиха</li>
+							<li class="option">НОЭЗ, г.Н.Новгород</li>
+							<li class="option">Оберег</li>
+							<li class="option">Омега, г.Димитровград</li>
+							<li class="option">Пензмаш, г. Пенза</li>
+							<li class="option">Петрозаводскмаш, г.Петрозаводск</li>
+							<li class="option">Поливектор, г.С.Петербург</li>
+							<li class="option">Просам, г.Рязань</li>
+							<li class="option">Сельмаш, г.Киров</li>
+							<li class="option">Смоленск</li>
+							<li class="option">ТИТАН</li>
+							<li class="option">Форпост</li>
+							<li class="option">Цербер, г.С.Петербург</li>
+							<li class="option">ЧАЗ, г.Чебоксары</li>
+							<li class="option">Электротехника</li>
+							<li class="option">Эльбор, г.Боровичи</li>
+						</ul>
+					</div>
+				</aside>
+
+				<section class="catalog-content">
+					<div class="head">
+						<h1 class="title">Выберите категорию</h1>
+						<button class="filter-trigger">
+							<svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M24.083 17L24.083 28.3333" stroke="#0041B3" stroke-linecap="round" />
+								<path d="M24.083 5.66675L24.083 11.3334" stroke="#0041B3" stroke-linecap="round" />
+								<path d="M9.91699 24.0833L9.91699 28.3333" stroke="#0041B3" stroke-linecap="round" />
+								<path d="M9.91699 5.66675L9.91699 17.0001" stroke="#0041B3" stroke-linecap="round" />
+								<circle cx="24.0837" cy="14.1667" r="2.83333" transform="rotate(-180 24.0837 14.1667)" stroke="#0041B3"
+									stroke-linecap="round" />
+								<circle cx="9.91667" cy="21.2499" r="2.83333" transform="rotate(-180 9.91667 21.2499)" stroke="#0041B3"
+									stroke-linecap="round" />
+							</svg>
+						</button>
+					</div>
+
+					<div class="accordions">
+						<article class="accordion">
+							<div class="accordion__q accordion__trigger">
+								<span class="ac-title">Apecs (Китай)</span>
+								<button>
+									<img src="images/icons/arrow-down.svg" loading="lazy" alt="">
+								</button>
+							</div>
+							<div class="accordion__a">
+								<div class="accordion__content">
+									<article class="accordion ac-sub">
+										<div class="accordion__q accordion__trigger">
+											<span class="ac-subtitle">Серия малых замков</span>
+											<button>
+												<img src="images/icons/arrow-down.svg" loading="lazy" alt="">
+											</button>
+										</div>
+										<div class="accordion__a">
+											<div class="accordion__content">
+												<article class="product">
+													<div class="product-id">МК000002494</div>
+													<div class="product-image">
+														<img src="images/products/mini.png" loading="lazy" alt="">
+													</div>
+													<div class="product-name">Замок накладной Apecs 0556-C-BN</div>
+													<div class="product-price">
+														<div class="new-price">2 300₽</div>
+														<div class="old-price">2 500₽</div>
+													</div>
+													<div class="counter">
+														<button class="decrement">
+															<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+																xmlns="http://www.w3.org/2000/svg">
+																<path d="M18 12L6 12" stroke="#5F5F5F" stroke-linecap="round" />
+															</svg>
+														</button>
+														<div class="count">0</div>
+														<div class="increment">
+															<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+																xmlns="http://www.w3.org/2000/svg">
+																<path d="M12 6L12 18" stroke="#5F5F5F" stroke-linecap="round" />
+																<path d="M18 12L6 12" stroke="#5F5F5F" stroke-linecap="round" />
+															</svg>
+														</div>
+													</div>
+												</article>
+												<article class="product">
+													<div class="product-id">МК000002494</div>
+													<div class="product-image">
+														<img src="images/products/mini.png" loading="lazy" alt="">
+													</div>
+													<div class="product-name">Замок накладной Apecs 0556-C-BN</div>
+													<div class="product-price">
+														<div class="new-price">2 300₽</div>
+														<div class="old-price">2 500₽</div>
+													</div>
+													<div class="counter">
+														<button class="decrement">
+															<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+																xmlns="http://www.w3.org/2000/svg">
+																<path d="M18 12L6 12" stroke="#5F5F5F" stroke-linecap="round" />
+															</svg>
+														</button>
+														<div class="count">0</div>
+														<div class="increment">
+															<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+																xmlns="http://www.w3.org/2000/svg">
+																<path d="M12 6L12 18" stroke="#5F5F5F" stroke-linecap="round" />
+																<path d="M18 12L6 12" stroke="#5F5F5F" stroke-linecap="round" />
+															</svg>
+														</div>
+													</div>
+												</article>
+												<article class="product">
+													<div class="product-id">МК000002494</div>
+													<div class="product-image">
+														<img src="images/products/mini.png" loading="lazy" alt="">
+													</div>
+													<div class="product-name">Замок накладной Apecs 0556-C-BN</div>
+													<div class="product-price">
+														<div class="new-price">2 300₽</div>
+														<div class="old-price">2 500₽</div>
+													</div>
+													<div class="counter">
+														<button class="decrement">
+															<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+																xmlns="http://www.w3.org/2000/svg">
+																<path d="M18 12L6 12" stroke="#5F5F5F" stroke-linecap="round" />
+															</svg>
+														</button>
+														<div class="count">0</div>
+														<div class="increment">
+															<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+																xmlns="http://www.w3.org/2000/svg">
+																<path d="M12 6L12 18" stroke="#5F5F5F" stroke-linecap="round" />
+																<path d="M18 12L6 12" stroke="#5F5F5F" stroke-linecap="round" />
+															</svg>
+														</div>
+													</div>
+												</article>
+											</div>
+										</div>
+									</article>
+									<article class="accordion ac-sub">
+										<div class="accordion__q accordion__trigger">
+											<span class="ac-subtitle">Серия средних замков (с цепочкой)</span>
+											<button>
+												<img src="images/icons/arrow-down.svg" loading="lazy" alt="">
+											</button>
+										</div>
+										<div class="accordion__a">
+											<div class="accordion__content">
+												<article class="product">
+													<div class="product-id">МК000002494</div>
+													<div class="product-image">
+														<img src="images/products/mini.png" loading="lazy" alt="">
+													</div>
+													<div class="product-name">Замок накладной Apecs 0556-C-BN</div>
+													<div class="product-price">
+														<div class="new-price">2 300₽</div>
+														<div class="old-price">2 500₽</div>
+													</div>
+													<div class="counter">
+														<button class="decrement">
+															<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+																xmlns="http://www.w3.org/2000/svg">
+																<path d="M18 12L6 12" stroke="#5F5F5F" stroke-linecap="round" />
+															</svg>
+														</button>
+														<div class="count">0</div>
+														<div class="increment">
+															<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+																xmlns="http://www.w3.org/2000/svg">
+																<path d="M12 6L12 18" stroke="#5F5F5F" stroke-linecap="round" />
+																<path d="M18 12L6 12" stroke="#5F5F5F" stroke-linecap="round" />
+															</svg>
+														</div>
+													</div>
+												</article>
+												<article class="product">
+													<div class="product-id">МК000002494</div>
+													<div class="product-image">
+														<img src="images/products/mini.png" loading="lazy" alt="">
+													</div>
+													<div class="product-name">Замок накладной Apecs 0556-C-BN</div>
+													<div class="product-price">
+														<div class="new-price">2 300₽</div>
+														<div class="old-price">2 500₽</div>
+													</div>
+													<div class="counter">
+														<button class="decrement">
+															<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+																xmlns="http://www.w3.org/2000/svg">
+																<path d="M18 12L6 12" stroke="#5F5F5F" stroke-linecap="round" />
+															</svg>
+														</button>
+														<div class="count">0</div>
+														<div class="increment">
+															<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+																xmlns="http://www.w3.org/2000/svg">
+																<path d="M12 6L12 18" stroke="#5F5F5F" stroke-linecap="round" />
+																<path d="M18 12L6 12" stroke="#5F5F5F" stroke-linecap="round" />
+															</svg>
+														</div>
+													</div>
+												</article>
+												<article class="product">
+													<div class="product-id">МК000002494</div>
+													<div class="product-image">
+														<img src="images/products/mini.png" loading="lazy" alt="">
+													</div>
+													<div class="product-name">Замок накладной Apecs 0556-C-BN</div>
+													<div class="product-price">
+														<div class="new-price">2 300₽</div>
+														<div class="old-price">2 500₽</div>
+													</div>
+													<div class="counter">
+														<button class="decrement">
+															<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+																xmlns="http://www.w3.org/2000/svg">
+																<path d="M18 12L6 12" stroke="#5F5F5F" stroke-linecap="round" />
+															</svg>
+														</button>
+														<div class="count">0</div>
+														<div class="increment">
+															<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+																xmlns="http://www.w3.org/2000/svg">
+																<path d="M12 6L12 18" stroke="#5F5F5F" stroke-linecap="round" />
+																<path d="M18 12L6 12" stroke="#5F5F5F" stroke-linecap="round" />
+															</svg>
+														</div>
+													</div>
+												</article>
+											</div>
+										</div>
+									</article>
+								</div>
+							</div>
+						</article>
+
+						<article class="accordion">
+							<div class="accordion__q accordion__trigger">
+								<span class="ac-title">BORDER, г.Рязань</span>
+								<button>
+									<img src="images/icons/arrow-down.svg" loading="lazy" alt="">
+								</button>
+							</div>
+							<div class="accordion__a">
+								<div class="accordion__content">
+									<article class="product">
+										<div class="product-id">МК000002494</div>
+										<div class="product-image">
+											<img src="images/products/mini.png" loading="lazy" alt="">
+										</div>
+										<div class="product-name">Замок накладной Apecs 0556-C-BN</div>
+										<div class="product-price">
+											<div class="new-price">2 300₽</div>
+											<div class="old-price">2 500₽</div>
+										</div>
+										<div class="counter">
+											<button class="decrement">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M18 12L6 12" stroke="#5F5F5F" stroke-linecap="round" />
+												</svg>
+											</button>
+											<div class="count">0</div>
+											<div class="increment">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M12 6L12 18" stroke="#5F5F5F" stroke-linecap="round" />
+													<path d="M18 12L6 12" stroke="#5F5F5F" stroke-linecap="round" />
+												</svg>
+											</div>
+										</div>
+									</article>
+								</div>
+							</div>
+						</article>
+
+						<article class="accordion">
+							<div class="accordion__q accordion__trigger">
+								<span class="ac-title">г.Глазов</span>
+								<button>
+									<img src="images/icons/arrow-down.svg" loading="lazy" alt="">
+								</button>
+							</div>
+							<div class="accordion__a">
+								<div class="accordion__content">
+									<article class="product">
+										<div class="product-id">МК000002494</div>
+										<div class="product-image">
+											<img src="images/products/mini.png" loading="lazy" alt="">
+										</div>
+										<div class="product-name">Замок накладной Apecs 0556-C-BN</div>
+										<div class="product-price">
+											<div class="new-price">2 300₽</div>
+											<div class="old-price">2 500₽</div>
+										</div>
+										<div class="counter">
+											<button class="decrement">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M18 12L6 12" stroke="#5F5F5F" stroke-linecap="round" />
+												</svg>
+											</button>
+											<div class="count">0</div>
+											<div class="increment">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M12 6L12 18" stroke="#5F5F5F" stroke-linecap="round" />
+													<path d="M18 12L6 12" stroke="#5F5F5F" stroke-linecap="round" />
+												</svg>
+											</div>
+										</div>
+									</article>
+								</div>
+							</div>
+						</article>
+
+						<article class="accordion">
+							<div class="accordion__q accordion__trigger">
+								<span class="ac-title">Авангард, г.Москва</span>
+								<button>
+									<img src="images/icons/arrow-down.svg" loading="lazy" alt="">
+								</button>
+							</div>
+							<div class="accordion__a">
+								<div class="accordion__content">
+									<article class="product">
+										<div class="product-id">МК000002494</div>
+										<div class="product-image">
+											<img src="images/products/mini.png" loading="lazy" alt="">
+										</div>
+										<div class="product-name">Замок накладной Apecs 0556-C-BN</div>
+										<div class="product-price">
+											<div class="new-price">2 300₽</div>
+											<div class="old-price">2 500₽</div>
+										</div>
+										<div class="counter">
+											<button class="decrement">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M18 12L6 12" stroke="#5F5F5F" stroke-linecap="round" />
+												</svg>
+											</button>
+											<div class="count">0</div>
+											<div class="increment">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M12 6L12 18" stroke="#5F5F5F" stroke-linecap="round" />
+													<path d="M18 12L6 12" stroke="#5F5F5F" stroke-linecap="round" />
+												</svg>
+											</div>
+										</div>
+									</article>
+								</div>
+							</div>
+						</article>
+
+						<article class="accordion">
+							<div class="accordion__q accordion__trigger">
+								<span class="ac-title">Барановичи</span>
+								<button>
+									<img src="images/icons/arrow-down.svg" loading="lazy" alt="">
+								</button>
+							</div>
+							<div class="accordion__a">
+								<div class="accordion__content">
+									<article class="product">
+										<div class="product-id">МК000002494</div>
+										<div class="product-image">
+											<img src="images/products/mini.png" loading="lazy" alt="">
+										</div>
+										<div class="product-name">Замок накладной Apecs 0556-C-BN</div>
+										<div class="product-price">
+											<div class="new-price">2 300₽</div>
+											<div class="old-price">2 500₽</div>
+										</div>
+										<div class="counter">
+											<button class="decrement">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M18 12L6 12" stroke="#5F5F5F" stroke-linecap="round" />
+												</svg>
+											</button>
+											<div class="count">0</div>
+											<div class="increment">
+												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M12 6L12 18" stroke="#5F5F5F" stroke-linecap="round" />
+													<path d="M18 12L6 12" stroke="#5F5F5F" stroke-linecap="round" />
+												</svg>
+											</div>
+										</div>
+									</article>
+								</div>
+							</div>
+						</article>
+					</div>
+				</section>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="container">
+			<div class="logo">
+				<img src="images/logo.webp" loading="lazy" alt="">
+			</div>
+			<div class="lists">
+				<div class="list">
+					<h5 class="list-title">Каталог</h5>
+					<a href="" class="list-item">Дверные замки</a>
+					<a href="" class="list-item">Дверные ручки</a>
+					<a href="" class="list-item">Фурнитура</a>
+					<a href="" class="list-item">Разное</a>
+				</div>
+				<div class="list">
+					<h5 class="list-title">Клиентам</h5>
+					<a href="" class="list-item">О компании</a>
+					<a href="" class="list-item">Статьи</a>
+					<a href="" class="list-item">Новости</a>
+					<a href="" class="list-item">Партнерам</a>
+					<a href="" class="list-item">Коллекции</a>
+				</div>
+				<div class="list">
+					<h5 class="list-title">Компания</h5>
+					<a href="" class="list-item">Контакты</a>
+					<a href="" class="list-item">Политика <br> конфиденциальности</a>
+					<a href="" class="list-item">Оферта</a>
+				</div>
+				<div class="list">
+					<h5 class="list-title">Контакты</h5>
+					<span class="list-item">+7 928 36 222 85</span>
+					<span class="list-item">г. Пятигорск, Черкесское <br> шоссе, д. 56</span>
+					<span class="list-item">info@zamki-opt.ru</span>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/index.js"></script>
+	<script src="js/catalog.js"></script>
+</body>
+
+</html>

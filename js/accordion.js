@@ -50,7 +50,6 @@
 		const isClosed = menu.style.height === "0px";
 
 		if (isClosed) {
-			accordions.forEach(el => close(el, el.querySelector(CLASSES.ACCORDION_ANSWER)))
 			open(accordion, menu);
 		} else {
 			close(accordion, menu);

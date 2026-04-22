@@ -7,10 +7,21 @@
 
 @import "components/header";
 @import "components/footer";
+
 @import "components/arrows";
+@import "components/tabs";
+@import "components/accordion";
 
 .page_main {
 	@import "pages/main";
+}
+
+.page_catalog {
+	@import "pages/catalog";
+}
+
+.page_collection {
+	@import "pages/collection";
 }
 
 html {
