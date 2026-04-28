@@ -11,6 +11,9 @@
 @import "components/arrows";
 @import "components/tabs";
 @import "components/accordion";
+@import "components/search";
+@import "components/application-form";
+@import "components/input";
 
 .page_main {
 	@import "pages/main";
@@ -22,6 +25,18 @@
 
 .page_collection {
 	@import "pages/collection";
+}
+
+.page_news {
+	@import "pages/news";
+}
+
+.page_article {
+	@import "pages/article";
+}
+
+.page_cooperation {
+	@import "pages/cooperation";
 }
 
 html {
@@ -48,9 +63,10 @@ main {
 }
 
 .container {
-	max-width: 1920px;
+	max-width: 1880px;
 	padding: 0 var(--container-padding);
 	margin: auto;
+
 }
 
 .mask {

@@ -1,0 +1,58 @@
+main {
+	margin-top: 90px;
+}
+
+.cooperation {
+	.container {
+		display: flex;
+		gap: 56px;
+	}
+
+	.content {
+		flex: 1 1 892px;
+		line-height: 1.4;
+
+		.title {
+			@extend %h1;
+		}
+
+		.text {
+			margin-top: 40px;
+			font-size: 20px;
+		}
+
+		.bold {
+			font-size: 20px;
+			margin-top: 20px;
+			display: inline-block;
+		}
+
+		.points {
+			margin-top: 40px;
+			display: flex;
+			gap: 26px;
+		}
+
+		.point {
+			flex: 1 1 0;
+			height: 215px;
+			border-radius: 18px;
+			flex-direction: column;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: #F9F9F9;
+			gap: 14px;
+			font-size: 20px;
+			text-align: center;
+			padding: 0 48px;
+		}
+	}
+
+
+	.component_application-form {
+		flex: 1 1 812px;
+		align-self: flex-start;
+	}
+
+}

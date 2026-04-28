@@ -2,13 +2,12 @@
 	--black: #191C1F;
 	--grey: #70695E;
 
+	--z-header-nav: 40;
 	--z-header: 50;
 	--z-mask: 70;
 	--z-modal: 100;
 
-	--container-padding: 80px;
-
-	--section-border-radius: 80px;
+	--container-padding: 60px;
 
 	@media (width < 1440px) {
 		--container-padding: 50px;
@@ -16,15 +15,10 @@
 
 	@media (width < 1024px) {
 		--container-padding: 40px;
-		--section-border-radius: 60px;
 	}
 
 	@media (width < 768px) {
-		--container-padding: 30px;
-		--section-border-radius: 40px;
-	}
-
-	@media (width < 425px) {
 		--container-padding: 20px;
 	}
+
 }

@@ -3,6 +3,8 @@ async function loadModules() {
 		return !!document.querySelector(selector)
 	}
 
+	import("./header.js")
+
 	if (has(".splide")) {
 		import("./sliders.js")
 	}
