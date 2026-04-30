@@ -17,4 +17,15 @@
 			title.innerText = clickedOption.innerText
 		}
 	})
+
+	document.addEventListener("click", (e) => {
+		if (!e.target.closest(".filter-trigger") && !e.target.closest(".filter-menu")) {
+			const trigger = document.querySelector(".filter-trigger input")
+			trigger.checked = false
+		}
+		if (!e.target.closest(".sidebar-trigger") && !e.target.closest(".category")) {
+			const trigger = document.querySelector(".sidebar-trigger input")
+			trigger.checked = false
+		}
+	})
 }())

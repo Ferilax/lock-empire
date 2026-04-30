@@ -15,20 +15,70 @@
 			<a href="index.html" class="logo">
 				<img src="images/logo.webp" alt="">
 			</a>
-			<nav class="nav">
-				<a href="catalog.html" class="nav-menu-trigger link">
-					<span>Каталог</span>
-					<svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M25.5 12.75L17 21.25L8.5 12.75" stroke="#696969" />
-					</svg>
-				</a>
+			<nav class="nav accordions">
+				<div class="nav-menu-trigger link accordion _open">
+					<div class="accordion__q accordion__trigger">
+						<span>Каталог</span>
+						<svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M25.5 12.75L17 21.25L8.5 12.75" stroke="#696969" />
+						</svg>
+					</div>
+					<section class="nav-menu accordion__a">
+						<div class="group">
+							<h4 class="group-title">Дверные замки</h4>
+							<a href="catalog.html" class="group-link">Накладные</a>
+							<a href="catalog.html" class="group-link">Врезные</a>
+							<a href="catalog.html" class="group-link">Защелки дверные</a>
+							<a href="catalog.html" class="group-link">Навесные</a>
+							<a href="catalog.html" class="group-link">Кодовые</a>
+						</div>
+						<div class="group">
+							<h4 class="group-title">Дверные ручки</h4>
+							<a href="catalog.html" class="group-link">Раздельные</a>
+							<a href="catalog.html" class="group-link">На планке</a>
+							<a href="catalog.html" class="group-link">Скобы</a>
+							<a href="catalog.html" class="group-link">Кнобы</a>
+							<a href="catalog.html" class="group-link">Для раздвижных дверей</a>
+							<a href="catalog.html" class="group-link">Кнопки</a>
+						</div>
+						<div class="group">
+							<h4 class="group-title">Фурнитура</h4>
+							<a href="catalog.html" class="group-link">Петли</a>
+							<a href="catalog.html" class="group-link">Шпингалеты, засовы</a>
+							<a href="catalog.html" class="group-link">Задвижки дверные</a>
+							<a href="catalog.html" class="group-link">Фурнитура к «антипанике»</a>
+						</div>
+						<div class="group _double">
+							<h4 class="group-title">Разное</h4>
+							<a href="catalog.html" class="group-link">Механизмы секретности</a>
+							<a href="catalog.html" class="group-link">Броненакладки</a>
+							<a href="catalog.html" class="group-link">Накладки, wc-комплекты</a>
+							<a href="catalog.html" class="group-link">Таблички информационные</a>
+							<a href="catalog.html" class="group-link">Дверные доводчики</a>
+							<a href="catalog.html" class="group-link">Цифры дверные</a>
+							<a href="catalog.html" class="group-link">Оконная фурнитура</a>
+							<a href="catalog.html" class="group-link">Кронштейны</a>
+							<a href="catalog.html" class="group-link">Упоры дверные</a>
+							<a href="catalog.html" class="group-link">Мебельная фурнитура</a>
+							<a href="catalog.html" class="group-link">Крючки</a>
+							<a href="catalog.html" class="group-link">Почтовые ящики</a>
+							<a href="catalog.html" class="group-link">Почтовые замки</a>
+							<a href="catalog.html" class="group-link">Перфорированный крепеж</a>
+							<a href="catalog.html" class="group-link">Оптика</a>
+							<a href="catalog.html" class="group-link">Разное</a>
+						</div>
+					</section>
+				</div>
 				<a href="" class="link">О компании</a>
-				<a href="" class="link">Новости</a>
-				<a href="" class="link">Партнерам</a>
+				<a href="news.html" class="link">Новости</a>
+				<a href="cooperation.html" class="link">Партнерам</a>
 				<a href="collection.html" class="link">Коллекции</a>
 				<a href="" class="link">Контакты</a>
 			</nav>
 			<div class="actions">
+				<button class="search-trigger">
+					<img src="images/icons/search.svg" alt="">
+				</button>
 				<label class="component_search">
 					<input type="text" placeholder="Найти товар">
 					<img src="images/icons/search.svg" alt="">
@@ -40,53 +90,23 @@
 				<a href="" class="person">
 					<img src="images/icons/user.svg" alt="">
 				</a>
+				<button class="mobile-nav-trigger">
+					<svg class="lines" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M7.08337 9.91675H26.9167" stroke="#A7A7A7" stroke-linecap="round" />
+						<path d="M7.08337 17H26.9167" stroke="#A7A7A7" stroke-linecap="round" />
+						<path d="M7.08337 24.0833H26.9167" stroke="#A7A7A7" stroke-linecap="round" />
+					</svg>
+
+					<svg class="close" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M28.3334 5.66675L5.66669 28.3334" stroke="#A7A7A7" stroke-linecap="round"
+							stroke-linejoin="round" />
+						<path d="M5.66665 5.66675L28.3333 28.3334" stroke="#A7A7A7" stroke-linecap="round"
+							stroke-linejoin="round" />
+					</svg>
+				</button>
+
 			</div>
 
-			<section class="nav-menu">
-				<div class="group">
-					<h4 class="group-title">Дверные замки</h4>
-					<a href="" class="group-link">Накладные</a>
-					<a href="" class="group-link">Врезные</a>
-					<a href="" class="group-link">Защелки дверные</a>
-					<a href="" class="group-link">Навесные</a>
-					<a href="" class="group-link">Кодовые</a>
-				</div>
-				<div class="group">
-					<h4 class="group-title">Дверные ручки</h4>
-					<a href="" class="group-link">Раздельные</a>
-					<a href="" class="group-link">На планке</a>
-					<a href="" class="group-link">Скобы</a>
-					<a href="" class="group-link">Кнобы</a>
-					<a href="" class="group-link">Для раздвижных дверей</a>
-					<a href="" class="group-link">Кнопки</a>
-				</div>
-				<div class="group">
-					<h4 class="group-title">Фурнитура</h4>
-					<a href="" class="group-link">Петли</a>
-					<a href="" class="group-link">Шпингалеты, засовы</a>
-					<a href="" class="group-link">Задвижки дверные</a>
-					<a href="" class="group-link">Фурнитура к «антипанике»</a>
-				</div>
-				<div class="group _double">
-					<h4 class="group-title">Разное</h4>
-					<a href="" class="group-link">Механизмы секретности</a>
-					<a href="" class="group-link">Броненакладки</a>
-					<a href="" class="group-link">Накладки, wc-комплекты</a>
-					<a href="" class="group-link">Таблички информационные</a>
-					<a href="" class="group-link">Дверные доводчики</a>
-					<a href="" class="group-link">Цифры дверные</a>
-					<a href="" class="group-link">Оконная фурнитура</a>
-					<a href="" class="group-link">Кронштейны</a>
-					<a href="" class="group-link">Упоры дверные</a>
-					<a href="" class="group-link">Мебельная фурнитура</a>
-					<a href="" class="group-link">Крючки</a>
-					<a href="" class="group-link">Почтовые ящики</a>
-					<a href="" class="group-link">Почтовые замки</a>
-					<a href="" class="group-link">Перфорированный крепеж</a>
-					<a href="" class="group-link">Оптика</a>
-					<a href="" class="group-link">Разное</a>
-				</div>
-			</section>
 		</div>
 	</header>
 
@@ -211,8 +231,16 @@
 
 				<section class="catalog-content">
 					<div class="head">
+						<label class="sidebar-trigger">
+							<svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M7.08301 9.91675H26.9163" stroke="#A7A7A7" stroke-linecap="round" />
+								<path d="M7.08301 17H26.9163" stroke="#A7A7A7" stroke-linecap="round" />
+								<path d="M7.08301 24.0833H26.9163" stroke="#A7A7A7" stroke-linecap="round" />
+							</svg>
+							<input type="checkbox" class="hidden">
+						</label>
 						<h1 class="title">Выберите категорию</h1>
-						<button class="filter-trigger">
+						<label class="filter-trigger">
 							<svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M24.083 17L24.083 28.3333" stroke="#0041B3" stroke-linecap="round" />
 								<path d="M24.083 5.66675L24.083 11.3334" stroke="#0041B3" stroke-linecap="round" />
@@ -223,7 +251,209 @@
 								<circle cx="9.91667" cy="21.2499" r="2.83333" transform="rotate(-180 9.91667 21.2499)" stroke="#0041B3"
 									stroke-linecap="round" />
 							</svg>
-						</button>
+							<input type="checkbox">
+						</label>
+
+						<div class="filter-menu">
+							<h3 class="filter-menu__title">Отображать</h3>
+							<div class="filter-menu__type">
+								<label class="filter-menu__button">
+									<input type="radio" name="type">
+									<span>Списком</span>
+								</label>
+								<label class="filter-menu__button">
+									<input type="radio" name="type" checked>
+									<span>С картинками</span>
+								</label>
+							</div>
+							<h3 class="filter-menu__title">Производитель</h3>
+							<ul class="filter-menu__list">
+								<div class="filter-menu__group">
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>AGB</span>
+									</label>
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>Amig (Испания)</span>
+									</label>
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>Apecs (Китай)</span>
+									</label>
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>ARMADILLO</span>
+									</label>
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>Avers</span>
+									</label>
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>Avers (Аверс)</span>
+									</label>
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>Avers (Китай)</span>
+									</label>
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>Avers (Россия)</span>
+									</label>
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>BORDER</span>
+									</label>
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>BORDER, г.Рязань</span>
+									</label>
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>Dorma</span>
+									</label>
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>FUARO</span>
+									</label>
+								</div>
+								<div class="filter-menu__group">
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>KALE KILIT</span>
+									</label>
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>MOTTURA</span>
+									</label>
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>Mottura (Италия)</span>
+									</label>
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>SIBA</span>
+									</label>
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>TACIT</span>
+									</label>
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>TITAN (Словения)</span>
+									</label>
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>Vanger (Вангер)</span>
+									</label>
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>Vilardi</span>
+									</label>
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>Авангард, г.Москва</span>
+									</label>
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>Аллюр</span>
+									</label>
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>Барановичи</span>
+									</label>
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>Бриг</span>
+									</label>
+								</div>
+								<div class="filter-menu__group">
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>Булат</span>
+									</label>
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>Вега-Люкс, г. Могилев</span>
+									</label>
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>г.Белгород</span>
+									</label>
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>г.Глазов</span>
+									</label>
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>г.Йошкар-Ола</span>
+									</label>
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>г.Череповец</span>
+									</label>
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>Гардиан, г.Йошкар-Ола</span>
+									</label>
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>Герион, г.Железнодорожный</span>
+									</label>
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>ДААЗ, г.Димитровград</span>
+									</label>
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>Делга, г.С.Петербург</span>
+									</label>
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>ЖЕЛЕЗНАЯ МАНУФАКТУРА УРАЛА</span>
+									</label>
+								</div>
+								<div class="filter-menu__group">
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>Замки ЗАЗ (Украина)</span>
+									</label>
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>Замкофф</span>
+									</label>
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>Зенит, г.Димитровград</span>
+									</label>
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>ЗЦЛ, г.Курган</span>
+									</label>
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>Крит</span>
+									</label>
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>КЭМЗ, г.Калуга</span>
+									</label>
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>Металлист</span>
+									</label>
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>Меттэм, г.Балашиха</span>
+									</label>
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>НОЭЗ, г.Н.Новгород</span>
+									</label>
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>Оберег</span>
+									</label>
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>Омега, г.Димитровград</span>
+									</label>
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>Пензмаш, г. Пенза</span>
+									</label>
+								</div>
+								<div class="filter-menu__group">
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>Петрозаводскмаш, г.Петрозаводск</span>
+									</label>
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>Поливектор, г.С.Петербург</span>
+									</label>
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>Просам, г.Рязань</span>
+									</label>
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>Сельмаш, г.Киров</span>
+									</label>
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>Смоленск</span>
+									</label>
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>ТИТАН</span>
+									</label>
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>Форпост</span>
+									</label>
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>Цербер, г.С.Петербург</span>
+									</label>
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>ЧАЗ, г.Чебоксары</span>
+									</label>
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>Электротехника</span>
+									</label>
+									<label class="filter-menu__option">
+										<input type="checkbox"> <span>Эльбор, г.Боровичи</span>
+									</label>
+								</div>
+							</ul>
+						</div>
 					</div>
 
 					<div class="accordions">
@@ -245,7 +475,7 @@
 										</div>
 										<div class="accordion__a">
 											<div class="accordion__content">
-												<article class="product">
+												<article class="component_product">
 													<div class="product-id">МК000002494</div>
 													<div class="product-image">
 														<img src="images/products/mini.png" loading="lazy" alt="">
@@ -272,7 +502,7 @@
 														</div>
 													</div>
 												</article>
-												<article class="product">
+												<article class="component_product">
 													<div class="product-id">МК000002494</div>
 													<div class="product-image">
 														<img src="images/products/mini.png" loading="lazy" alt="">
@@ -299,7 +529,7 @@
 														</div>
 													</div>
 												</article>
-												<article class="product">
+												<article class="component_product">
 													<div class="product-id">МК000002494</div>
 													<div class="product-image">
 														<img src="images/products/mini.png" loading="lazy" alt="">
@@ -338,7 +568,7 @@
 										</div>
 										<div class="accordion__a">
 											<div class="accordion__content">
-												<article class="product">
+												<article class="component_product">
 													<div class="product-id">МК000002494</div>
 													<div class="product-image">
 														<img src="images/products/mini.png" loading="lazy" alt="">
@@ -365,7 +595,7 @@
 														</div>
 													</div>
 												</article>
-												<article class="product">
+												<article class="component_product">
 													<div class="product-id">МК000002494</div>
 													<div class="product-image">
 														<img src="images/products/mini.png" loading="lazy" alt="">
@@ -392,7 +622,7 @@
 														</div>
 													</div>
 												</article>
-												<article class="product">
+												<article class="component_product">
 													<div class="product-id">МК000002494</div>
 													<div class="product-image">
 														<img src="images/products/mini.png" loading="lazy" alt="">
@@ -435,7 +665,7 @@
 							</div>
 							<div class="accordion__a">
 								<div class="accordion__content">
-									<article class="product">
+									<article class="component_product">
 										<div class="product-id">МК000002494</div>
 										<div class="product-image">
 											<img src="images/products/mini.png" loading="lazy" alt="">
@@ -473,7 +703,7 @@
 							</div>
 							<div class="accordion__a">
 								<div class="accordion__content">
-									<article class="product">
+									<article class="component_product">
 										<div class="product-id">МК000002494</div>
 										<div class="product-image">
 											<img src="images/products/mini.png" loading="lazy" alt="">
@@ -511,7 +741,7 @@
 							</div>
 							<div class="accordion__a">
 								<div class="accordion__content">
-									<article class="product">
+									<article class="component_product">
 										<div class="product-id">МК000002494</div>
 										<div class="product-image">
 											<img src="images/products/mini.png" loading="lazy" alt="">
@@ -549,7 +779,7 @@
 							</div>
 							<div class="accordion__a">
 								<div class="accordion__content">
-									<article class="product">
+									<article class="component_product">
 										<div class="product-id">МК000002494</div>
 										<div class="product-image">
 											<img src="images/products/mini.png" loading="lazy" alt="">
