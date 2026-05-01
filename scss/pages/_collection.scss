@@ -1,10 +1,12 @@
 main {
 	margin-top: 70px;
+
+	@media (width < 1024px) {
+		margin-top: 30px;
+	}
 }
 
 .collection {
-
-	.container {}
 
 	.title {
 		@extend %h1;
@@ -18,19 +20,13 @@ main {
 		flex-direction: column;
 	}
 
-	.group {}
-
 	.subtitle {
 		font-size: 32px;
 		font-weight: 600;
 	}
 
-	.row {
-		margin-top: 32px;
-		padding: 0 8px;
-
-		display: flex;
-		gap: 40px;
+	.splide__track {
+		margin: 32px calc((100vw - 100%) / -2) 0;
 	}
 
 	.file {
@@ -41,7 +37,7 @@ main {
 		flex-direction: column;
 		gap: 24px;
 		align-items: start;
-		flex: 0 0 257px;
+		width: 257px;
 		min-height: 170px;
 
 		font-size: 24px;
@@ -51,6 +47,47 @@ main {
 
 		span {
 			margin-top: auto;
+		}
+	}
+
+	@media (width < 1440px) {
+		.subtitle {
+			font-size: 28px;
+		}
+	}
+
+	@media (width < 1024px) {
+		.groups {
+			margin-top: 30px;
+		}
+
+		.splide__track {
+			margin-top: 16px;
+		}
+
+		.subtitle {
+			font-size: 24px;
+		}
+
+		.file {
+			font-size: 20px;
+			font-weight: 400;
+		}
+	}
+
+	@media (width < 768px) {
+		.title {
+			max-width: 300px;
+		}
+
+		.subtitle {
+			font-size: 20px;
+		}
+
+		.file {
+			padding: 8px;
+			width: 160px;
+			font-size: 18px;
 		}
 	}
 }

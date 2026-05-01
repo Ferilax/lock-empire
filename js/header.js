@@ -11,7 +11,6 @@
 	const searchTrigger = document.querySelector(".search-trigger")
 	const search = document.querySelector(".component_search")
 
-
 	searchTrigger.addEventListener("click", () => {
 		header.classList.add("_searching")
 	})

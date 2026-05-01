@@ -1,10 +1,14 @@
 main {
 	margin-top: 60px;
+
+	@media (width < 1024px) {
+		margin-top: 40px;
+	}
 }
 
 .article {
-
 	line-height: 1.4;
+	text-wrap: balance;
 
 	.body {
 		max-width: 1166px;
@@ -111,6 +115,28 @@ main {
 			height: 8px;
 			border-radius: 50%;
 			background: #0041B3;
+		}
+	}
+
+	@media (width < 1024px) {
+		.date {
+			margin-top: 20px;
+		}
+
+		.title {
+			font-size: 32px;
+		}
+
+		.image {
+			margin-top: 30px;
+		}
+
+		.text {
+			margin-top: 30px;
+		}
+
+		.blue {
+			padding: 24px;
 		}
 	}
 }

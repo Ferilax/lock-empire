@@ -462,3 +462,323 @@
 		}
 	}
 }
+
+.product-modal {
+	.modal__body {
+		display: flex;
+		gap: 60px;
+	}
+
+	.sliders {
+		display: flex;
+		gap: 12px;
+	}
+
+	.left {
+		flex: 1 1 0;
+		min-width: 0;
+	}
+
+	.right {
+		flex: 1 1 0;
+	}
+
+	.splide {
+		min-width: 0;
+
+		.splide__slide {
+			background: #00000014;
+			contain: paint;
+
+			img {
+				mix-blend-mode: darken;
+			}
+		}
+	}
+
+	#product-preview_splide {
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		.splide__slide {
+			border-radius: 10px;
+		}
+
+		.splide__pagination {
+			counter-reset: pagination-num;
+		}
+
+		.splide__pagination__page:before {
+			counter-increment: pagination-num;
+			content: counter(pagination-num);
+		}
+	}
+
+	.counter {
+		color: #FFFFFF;
+		font-weight: 700;
+		background: #A7A7A7;
+		padding: 0 12px;
+		height: 24px;
+		border-radius: 100px;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		position: absolute;
+		z-index: 1;
+		bottom: 8px;
+		left: 50%;
+		translate: -50%;
+
+		display: none;
+	}
+
+	#product-preview-minimap_splide {
+		flex: 0 0 98px;
+
+		.splide__slide {
+			cursor: pointer;
+			border-radius: 3px;
+			aspect-ratio: 98/120;
+
+			img {
+				width: 100%;
+				object-fit: cover;
+			}
+		}
+
+		.splide__slide.is-active {
+
+			&::after {
+				position: absolute;
+				content: "";
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: #0000003a;
+			}
+		}
+	}
+
+	.splide__arrow {
+		margin: 12px auto 0;
+	}
+
+	.splide__arrow--prev {
+		display: none;
+	}
+
+	.files {
+		display: flex;
+		margin-top: 24px;
+		gap: 24px;
+		flex-wrap: wrap;
+	}
+
+	.file {
+		display: flex;
+		gap: 12px;
+		align-items: center;
+		font-size: 14px;
+		font-weight: 500;
+		color: #111111;
+
+		span {
+			max-width: 100px;
+		}
+	}
+
+	.title {
+		font-size: 32px;
+		font-weight: 600;
+		max-width: 360px;
+	}
+
+	.tags {
+		margin-top: 18px;
+		display: flex;
+		column-gap: 24px;
+		row-gap: 12px;
+		flex-wrap: wrap;
+	}
+
+	.tag {
+		color: #5F5F5F;
+		font-size: 14px;
+		font-weight: 500;
+	}
+
+	.blue {
+		color: #0041B3;
+	}
+
+	.price-and-button {
+		margin-top: 32px;
+
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		row-gap: 12px;
+		gap: 8px;
+	}
+
+	.price {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+	}
+
+	.prices {
+		display: flex;
+		gap: 8px;
+		align-items: center;
+	}
+
+	.new-price {
+		color: #0041B3;
+		font-size: 32px;
+		font-weight: 600;
+	}
+
+	.old-price {
+		font-size: 14px;
+		font-weight: 500;
+		color: #A7A7A7;
+		text-decoration: line-through;
+	}
+
+	.discount {
+		color: #FFFFFF;
+		background: #E31C1C;
+		font-weight: 700;
+		height: 24px;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		padding: 0 12px;
+		border-radius: 100px;
+	}
+
+	.buy {
+		@extend %button-blue;
+	}
+
+	.info {
+		margin-top: 60px;
+
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+
+		color: #696969;
+		font-size: 18px;
+
+		>div {
+			padding: 8px 16px;
+
+			&:nth-child(4n - 3) {
+				background: #F2F2F2;
+				border-radius: 10px 0 0 10px;
+			}
+
+			&:nth-child(4n - 2) {
+				background: #F2F2F2;
+				border-radius: 0 10px 10px 0;
+			}
+		}
+	}
+
+	._mobile {
+		display: none;
+	}
+
+	@media (width < 1440px) {
+
+		#product-preview-minimap_splide {
+			flex: 0 0 60px;
+		}
+
+		.prices {
+			flex-direction: column-reverse;
+			gap: 0;
+			align-items: start;
+		}
+
+		.modal__body {
+			padding: 40px;
+			gap: 40px;
+		}
+	}
+
+	@media (width < 1024px) {
+		._mobile {
+			display: flex;
+		}
+
+		._desktop {
+			display: none;
+		}
+
+		.modal__body {
+			flex-direction: column;
+		}
+
+		#product-preview-minimap_splide {
+			flex: 0 0 120px;
+		}
+
+		.info {
+			margin-top: 40px;
+		}
+
+		.title {
+			font-size: 28px;
+		}
+
+		.files {
+			margin-top: 40px;
+		}
+	}
+
+	@media (width < 768px) {
+		#product-preview-minimap_splide {
+			display: none;
+		}
+
+		#product-preview_splide {
+			.splide__slide {
+				border-radius: 30px;
+			}
+		}
+
+		.counter {
+			display: flex;
+		}
+
+		.modal__body {
+			padding: 10px 10px 30px;
+			gap: 16px;
+		}
+
+		.title {
+			font-size: 24px;
+		}
+
+		.info {
+			font-size: 16px;
+		}
+
+		.tags {
+			gap: 16px;
+			font-size: 14px;
+		}
+
+	}
+
+	@media (width < 425px) {}
+}

@@ -14,6 +14,10 @@ async function loadModules() {
 	if (has(".accordions")) {
 		import("./accordion.js")
 	}
+	if (has(".modal")) {
+
+		import("./modal.js")
+	}
 }
 
 // Запускаем после загрузки DOM
