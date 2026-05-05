@@ -18,7 +18,9 @@
 
 		img {
 			height: 80px;
-			mix-blend-mode: darken;
+			width: 66px;
+			object-fit: cover;
+			mix-blend-mode: multiply;
 		}
 	}
 

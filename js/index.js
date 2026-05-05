@@ -15,7 +15,9 @@ async function loadModules() {
 		import("./accordion.js")
 	}
 	if (has(".modal")) {
-
+		import("./modal.js")
+	}
+	if (has(".modal")) {
 		import("./modal.js")
 	}
 }

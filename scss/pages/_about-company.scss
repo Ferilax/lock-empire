@@ -1,0 +1,218 @@
+main {
+	margin-top: 90px;
+
+	@media (width < 1440px) {
+		margin-top: 60px;
+	}
+
+	@media (width < 1024px) {
+		margin-top: 30px;
+	}
+}
+
+.about-company {
+	.container {
+		display: flex;
+		gap: 80px;
+	}
+
+	@media (width < 1024px) {
+		.container {
+			flex-direction: column;
+		}
+	}
+}
+
+.content {
+	flex: 1 1 870px;
+	line-height: 1.4;
+
+	display: flex;
+	flex-direction: column;
+	gap: 60px;
+
+	.title {
+		@extend %h1;
+		margin-bottom: 40px;
+	}
+
+	.text {
+		line-height: 1.4;
+		color: #2A2A2A;
+		font-size: 20px;
+		text-wrap: balance;
+	}
+
+	.points {
+
+		margin-top: 30px;
+
+		color: #2A2A2A;
+
+		display: flex;
+		gap: 26px;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+
+	.point {
+		height: 140px;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 18px;
+		flex-direction: column;
+		background: #F9F9F9;
+		flex: 1 1 190px;
+
+		span {
+			font-size: 18px;
+		}
+
+		b {
+			font-size: 24px;
+		}
+
+		&._blue {
+			flex: 1 1 238px;
+			background: #0041B3;
+			color: white;
+			font-size: 20px;
+			font-weight: 700;
+		}
+	}
+
+	.subtitle {
+		font-size: 32px;
+		font-weight: 700;
+		max-width: 455px;
+		margin-bottom: 20px;
+	}
+
+	.icon-points {
+		margin-top: 30px;
+
+		display: flex;
+		gap: 26px;
+		flex-wrap: wrap;
+	}
+
+	.icon-point {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		font-size: 20px;
+		color: #2A2A2A;
+		font-weight: 700;
+		gap: 8px;
+
+		background: #F9F9F9;
+		border-radius: 18px;
+		height: 190px;
+		flex: 1 1 0;
+		padding: 0 32px;
+	}
+
+	.partners {
+		margin-top: 30px;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 24px;
+	}
+
+	.partner {
+		background: #F2F2F2;
+		border-radius: 10px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		aspect-ratio: 273/120;
+
+		img {
+			mix-blend-mode: multiply;
+			max-width: 90%;
+			object-fit: contain;
+
+			max-height: 100%;
+		}
+	}
+
+	@media (width < 1440px) {
+		.subtitle {
+			font-size: 28px;
+		}
+
+		.points {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 16px;
+		}
+
+		.point {
+
+			padding: 0 18px;
+		}
+
+		.icon-point {
+			height: 143px;
+		}
+
+		.icon-points {
+			gap: 16px;
+		}
+
+		.partners {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+
+	@media (width < 1024px) {
+		flex: unset;
+
+		.title {
+			margin-bottom: 20px;
+		}
+
+		.subtitle {
+			font-size: 24px;
+		}
+
+		.point {
+			height: 92px;
+		}
+	}
+
+	@media (width < 768px) {
+		.points {
+			gap: 8px;
+		}
+
+		.icon-points {
+			gap: 8px;
+		}
+
+		.partners {
+			gap: 8px;
+		}
+	}
+
+	@media (width < 425px) {
+		.icon-points {
+			flex-direction: column;
+		}
+
+		.icon-point {
+			flex: 0 0 142px;
+		}
+	}
+}
+
+.component_application-form {
+	flex: 1 1 812px;
+	align-self: flex-start;
+
+	@media (width < 1024px) {
+		flex: unset;
+	}
+}

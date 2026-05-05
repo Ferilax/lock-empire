@@ -242,7 +242,7 @@
 	.bg {
 		width: 100%;
 		height: 100%;
-		mix-blend-mode: darken;
+		mix-blend-mode: multiply;
 		object-fit: cover;
 	}
 
@@ -432,7 +432,7 @@
 		aspect-ratio: 274/120;
 
 		img {
-			mix-blend-mode: darken;
+			mix-blend-mode: multiply;
 			width: 100%;
 		}
 	}
@@ -491,7 +491,7 @@
 			contain: paint;
 
 			img {
-				mix-blend-mode: darken;
+				mix-blend-mode: multiply;
 			}
 		}
 	}

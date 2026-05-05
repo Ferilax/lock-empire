@@ -41,6 +41,22 @@
 	@import "pages/cooperation";
 }
 
+.page_about-company {
+	@import "pages/about-company";
+}
+
+.page_contacts {
+	@import "pages/contacts";
+}
+
+.page_ordering {
+	@import "pages/ordering";
+}
+
+.page_profile {
+	@import "pages/profile";
+}
+
 html {
 	&._lock-scroll {
 		overflow: hidden;
@@ -58,10 +74,15 @@ body {
 	color: var(--black);
 	font-family: Manrope;
 	line-height: 1.2;
+
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 }
 
 main {
 	margin-top: 40px;
+	margin-bottom: auto;
 }
 
 .container {
@@ -69,6 +90,10 @@ main {
 	padding: 0 var(--container-padding);
 	margin: auto;
 
+}
+
+path {
+	transition: .2s;
 }
 
 .mask {

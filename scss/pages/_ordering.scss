@@ -1,0 +1,238 @@
+main {
+	margin-top: 90px;
+
+	@media (width < 1440px) {
+		margin-top: 60px;
+	}
+
+	@media (width < 1024px) {
+		margin-top: 30px;
+	}
+}
+
+.ordering {
+	.title {
+		@extend %h1;
+	}
+
+	.flex {
+		margin-top: 40px;
+		gap: 60px;
+		display: flex;
+	}
+
+	.products {
+		flex: 1 1 1130px;
+
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+	}
+
+	.component_product {
+		gap: 16px;
+		justify-content: space-between;
+		background: #F9F9F9;
+	}
+
+	.delete-and-counter {
+		align-items: center;
+		display: flex;
+		gap: 18px;
+	}
+
+	.product-price {
+		margin: 0;
+		flex: unset;
+	}
+
+	.product-name {
+		max-width: 220px;
+	}
+
+	.counter {
+		background: white;
+	}
+
+	.delete {
+		display: flex;
+
+		&:hover {
+			path {
+				stroke: #E31C1C;
+			}
+		}
+	}
+
+	.form {
+		flex: 1 1 570px;
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+	}
+
+	.group {
+		display: flex;
+		gap: 16px;
+		flex-direction: column;
+	}
+
+	.g-title {
+		font-size: 24px;
+		font-weight: 700;
+		color: #2A2A2A;
+	}
+
+	.g-checkbox {
+		display: flex;
+		gap: 8px;
+
+		background: #F9F9F9;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 8px;
+		height: 52px;
+		border-radius: 16px;
+		padding: 0 16px;
+		font-size: 20px;
+
+		&:has(input:checked) {
+			._unchecked {
+				display: none;
+			}
+
+			._checked {
+				display: flex;
+			}
+		}
+	}
+
+	.g-flex {
+		display: flex;
+		gap: 8px;
+		flex-wrap: wrap;
+	}
+
+	._checked {
+		display: none;
+	}
+
+	._purple {
+		color: #8A38F5;
+	}
+
+	.input-label {
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 1;
+		color: #A7A7A7;
+	}
+
+	.component_input {
+		margin-top: 8px;
+		color: #2A2A2A;
+		background: #F2F2F2;
+	}
+
+	.g-text {
+		margin-top: -10px;
+		font-size: 14px;
+		font-weight: 500;
+		color: #5F5F5F;
+	}
+
+	.input-grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 24px;
+	}
+
+	.final-desk {
+		padding: 40px 48px;
+		background: #F9F9F9;
+		border-radius: 18px;
+	}
+
+	.info {
+		display: flex;
+		justify-content: space-between;
+		font-size: 20px;
+		line-height: 1;
+		color: #2A2A2A;
+
+		&:not(:first-child) {
+			margin-top: 16px;
+		}
+	}
+
+	.total {
+		font-size: 24px;
+		font-weight: 700;
+		display: flex;
+		justify-content: space-between;
+		margin-top: 30px;
+	}
+
+	.submit {
+		margin-top: 32px;
+		@extend %button-blue;
+		width: 100%;
+		padding: 0;
+	}
+
+	.PP {
+		margin-top: 12px;
+		font-size: 14px;
+		font-weight: 500;
+		color: #5F5F5F;
+		text-align: center;
+	}
+
+	@media (width < 1440px) {
+		.delete-and-counter {
+			order: 4;
+			grid-column: span 2;
+		}
+
+		.flex {
+			gap: 32px;
+		}
+
+		.counter {
+			margin: 0;
+		}
+
+		.delete {
+			display: none;
+		}
+
+		.input-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.final-desk {
+			padding: 32px;
+		}
+	}
+
+	@media (width < 1024px) {
+		.flex {
+			margin-top: 30px;
+			flex-direction: column;
+			gap: 60px;
+		}
+
+		.g-checkbox {
+			font-size: 18px;
+		}
+
+		.component_input {
+			font-size: 18px;
+		}
+
+		.final-desk {
+			padding: 24px;
+		}
+	}
+}

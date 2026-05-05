@@ -38,6 +38,8 @@ header {
 	}
 
 	.nav-menu-trigger {
+		transition: 0s;
+
 		.accordion__q {
 			cursor: pointer;
 			display: flex;
@@ -96,7 +98,6 @@ header {
 		opacity: 0;
 		visibility: hidden;
 		translate: -50% 40px;
-		transition: .3s;
 
 		width: 1548px;
 		position: absolute;
@@ -188,7 +189,7 @@ header {
 	@media (width >=1440px) {
 		.accordion__a {
 			overflow: visible !important;
-			transition: 0.3s !important;
+			transition: 0.2s !important;
 			height: auto !important;
 			min-height: var(--min-height) !important;
 			pointer-events: auto !important;

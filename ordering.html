@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Оформление заказа</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/splide-core.min.css">
+</head>
+
+<body class="page_ordering">
+	<header>
+		<div class="container">
+			<a href="index.html" class="logo">
+				<img src="images/logo.webp" alt="">
+			</a>
+			<nav class="nav accordions">
+				<div class="nav-menu-trigger link accordion _open">
+					<div class="accordion__q accordion__trigger">
+						<span>Каталог</span>
+						<svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M25.5 12.75L17 21.25L8.5 12.75" stroke="#696969" />
+						</svg>
+					</div>
+					<section class="nav-menu accordion__a">
+						<div class="group">
+							<h4 class="group-title">Дверные замки</h4>
+							<a href="catalog.html" class="group-link">Накладные</a>
+							<a href="catalog.html" class="group-link">Врезные</a>
+							<a href="catalog.html" class="group-link">Защелки дверные</a>
+							<a href="catalog.html" class="group-link">Навесные</a>
+							<a href="catalog.html" class="group-link">Кодовые</a>
+						</div>
+						<div class="group">
+							<h4 class="group-title">Дверные ручки</h4>
+							<a href="catalog.html" class="group-link">Раздельные</a>
+							<a href="catalog.html" class="group-link">На планке</a>
+							<a href="catalog.html" class="group-link">Скобы</a>
+							<a href="catalog.html" class="group-link">Кнобы</a>
+							<a href="catalog.html" class="group-link">Для раздвижных дверей</a>
+							<a href="catalog.html" class="group-link">Кнопки</a>
+						</div>
+						<div class="group">
+							<h4 class="group-title">Фурнитура</h4>
+							<a href="catalog.html" class="group-link">Петли</a>
+							<a href="catalog.html" class="group-link">Шпингалеты, засовы</a>
+							<a href="catalog.html" class="group-link">Задвижки дверные</a>
+							<a href="catalog.html" class="group-link">Фурнитура к «антипанике»</a>
+						</div>
+						<div class="group _double">
+							<h4 class="group-title">Разное</h4>
+							<a href="catalog.html" class="group-link">Механизмы секретности</a>
+							<a href="catalog.html" class="group-link">Броненакладки</a>
+							<a href="catalog.html" class="group-link">Накладки, wc-комплекты</a>
+							<a href="catalog.html" class="group-link">Таблички информационные</a>
+							<a href="catalog.html" class="group-link">Дверные доводчики</a>
+							<a href="catalog.html" class="group-link">Цифры дверные</a>
+							<a href="catalog.html" class="group-link">Оконная фурнитура</a>
+							<a href="catalog.html" class="group-link">Кронштейны</a>
+							<a href="catalog.html" class="group-link">Упоры дверные</a>
+							<a href="catalog.html" class="group-link">Мебельная фурнитура</a>
+							<a href="catalog.html" class="group-link">Крючки</a>
+							<a href="catalog.html" class="group-link">Почтовые ящики</a>
+							<a href="catalog.html" class="group-link">Почтовые замки</a>
+							<a href="catalog.html" class="group-link">Перфорированный крепеж</a>
+							<a href="catalog.html" class="group-link">Оптика</a>
+							<a href="catalog.html" class="group-link">Разное</a>
+						</div>
+					</section>
+				</div>
+				<a href="" class="link">О компании</a>
+				<a href="news.html" class="link">Новости</a>
+				<a href="cooperation.html" class="link">Партнерам</a>
+				<a href="collection.html" class="link">Коллекции</a>
+				<a href="" class="link">Контакты</a>
+			</nav>
+			<div class="actions">
+				<button class="search-trigger">
+					<img src="images/icons/search.svg" alt="">
+				</button>
+				<label class="component_search">
+					<input type="text" placeholder="Найти товар">
+					<img src="images/icons/search.svg" alt="">
+				</label>
+				<a href="" class="basket">
+					<img src="images/icons/basket.svg" alt="">
+					<span>5</span>
+				</a>
+				<a href="" class="person">
+					<img src="images/icons/user.svg" alt="">
+				</a>
+				<button class="mobile-nav-trigger">
+					<svg class="lines" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M7.08337 9.91675H26.9167" stroke="#A7A7A7" stroke-linecap="round" />
+						<path d="M7.08337 17H26.9167" stroke="#A7A7A7" stroke-linecap="round" />
+						<path d="M7.08337 24.0833H26.9167" stroke="#A7A7A7" stroke-linecap="round" />
+					</svg>
+
+					<svg class="close" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M28.3334 5.66675L5.66669 28.3334" stroke="#A7A7A7" stroke-linecap="round"
+							stroke-linejoin="round" />
+						<path d="M5.66665 5.66675L28.3333 28.3334" stroke="#A7A7A7" stroke-linecap="round"
+							stroke-linejoin="round" />
+					</svg>
+				</button>
+
+			</div>
+
+		</div>
+	</header>
+
+	<main>
+		<section class="ordering">
+			<div class="container">
+				<h1 class="title">Оформление заказа</h1>
+				<div class="flex">
+					<section class="products">
+						<article class="component_product">
+							<div class="product-id">МК000002494</div>
+							<div class="product-image">
+								<img src="images/products/mini.png" loading="lazy" alt="">
+							</div>
+							<div class="product-name">Замок накладной Apecs 0556-C-BN</div>
+							<div class="product-price">
+								<div class="new-price">2 300₽</div>
+								<div class="old-price">2 500₽</div>
+							</div>
+							<div class="delete-and-counter">
+								<button class="delete">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M9.5 14.5L9.5 11.5" stroke="#A7A7A7" stroke-linecap="round" />
+										<path d="M14.5 14.5L14.5 11.5" stroke="#A7A7A7" stroke-linecap="round" />
+										<path
+											d="M3 6.5H21C19.5955 6.5 18.8933 6.5 18.3889 6.83706C18.1705 6.98298 17.983 7.17048 17.8371 7.38886C17.5 7.89331 17.5 8.59554 17.5 10V15.5C17.5 17.3856 17.5 18.3284 16.9142 18.9142C16.3284 19.5 15.3856 19.5 13.5 19.5H10.5C8.61438 19.5 7.67157 19.5 7.08579 18.9142C6.5 18.3284 6.5 17.3856 6.5 15.5V10C6.5 8.59554 6.5 7.89331 6.16294 7.38886C6.01702 7.17048 5.82952 6.98298 5.61114 6.83706C5.10669 6.5 4.40446 6.5 3 6.5Z"
+											stroke="#A7A7A7" stroke-linecap="round" />
+										<path d="M9.5 3.50024C9.5 3.50024 10 2.5 12 2.5C14 2.5 14.5 3.5 14.5 3.5" stroke="#A7A7A7"
+											stroke-linecap="round" />
+									</svg>
+								</button>
+								<div class="counter">
+									<button class="decrement">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M18 12L6 12" stroke="#5F5F5F" stroke-linecap="round" />
+										</svg>
+									</button>
+									<div class="count">0</div>
+									<div class="increment">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M12 6L12 18" stroke="#5F5F5F" stroke-linecap="round" />
+											<path d="M18 12L6 12" stroke="#5F5F5F" stroke-linecap="round" />
+										</svg>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="component_product">
+							<div class="product-id">МК000002494</div>
+							<div class="product-image">
+								<img src="images/products/2.png" loading="lazy" alt="">
+							</div>
+							<div class="product-name">Замок накладной Apecs 0556-C-BN</div>
+							<div class="product-price">
+								<div class="new-price">2 300₽</div>
+								<div class="old-price">2 500₽</div>
+							</div>
+							<div class="delete-and-counter">
+								<button class="delete">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M9.5 14.5L9.5 11.5" stroke="#A7A7A7" stroke-linecap="round" />
+										<path d="M14.5 14.5L14.5 11.5" stroke="#A7A7A7" stroke-linecap="round" />
+										<path
+											d="M3 6.5H21C19.5955 6.5 18.8933 6.5 18.3889 6.83706C18.1705 6.98298 17.983 7.17048 17.8371 7.38886C17.5 7.89331 17.5 8.59554 17.5 10V15.5C17.5 17.3856 17.5 18.3284 16.9142 18.9142C16.3284 19.5 15.3856 19.5 13.5 19.5H10.5C8.61438 19.5 7.67157 19.5 7.08579 18.9142C6.5 18.3284 6.5 17.3856 6.5 15.5V10C6.5 8.59554 6.5 7.89331 6.16294 7.38886C6.01702 7.17048 5.82952 6.98298 5.61114 6.83706C5.10669 6.5 4.40446 6.5 3 6.5Z"
+											stroke="#A7A7A7" stroke-linecap="round" />
+										<path d="M9.5 3.50024C9.5 3.50024 10 2.5 12 2.5C14 2.5 14.5 3.5 14.5 3.5" stroke="#A7A7A7"
+											stroke-linecap="round" />
+									</svg>
+								</button>
+								<div class="counter">
+									<button class="decrement">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M18 12L6 12" stroke="#5F5F5F" stroke-linecap="round" />
+										</svg>
+									</button>
+									<div class="count">0</div>
+									<div class="increment">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M12 6L12 18" stroke="#5F5F5F" stroke-linecap="round" />
+											<path d="M18 12L6 12" stroke="#5F5F5F" stroke-linecap="round" />
+										</svg>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="component_product">
+							<div class="product-id">МК000002494</div>
+							<div class="product-image">
+								<img src="images/products/mini.png" loading="lazy" alt="">
+							</div>
+							<div class="product-name">Замок накладной Apecs 0556-C-BN</div>
+							<div class="product-price">
+								<div class="new-price">2 300₽</div>
+								<div class="old-price">2 500₽</div>
+							</div>
+							<div class="delete-and-counter">
+								<button class="delete">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M9.5 14.5L9.5 11.5" stroke="#A7A7A7" stroke-linecap="round" />
+										<path d="M14.5 14.5L14.5 11.5" stroke="#A7A7A7" stroke-linecap="round" />
+										<path
+											d="M3 6.5H21C19.5955 6.5 18.8933 6.5 18.3889 6.83706C18.1705 6.98298 17.983 7.17048 17.8371 7.38886C17.5 7.89331 17.5 8.59554 17.5 10V15.5C17.5 17.3856 17.5 18.3284 16.9142 18.9142C16.3284 19.5 15.3856 19.5 13.5 19.5H10.5C8.61438 19.5 7.67157 19.5 7.08579 18.9142C6.5 18.3284 6.5 17.3856 6.5 15.5V10C6.5 8.59554 6.5 7.89331 6.16294 7.38886C6.01702 7.17048 5.82952 6.98298 5.61114 6.83706C5.10669 6.5 4.40446 6.5 3 6.5Z"
+											stroke="#A7A7A7" stroke-linecap="round" />
+										<path d="M9.5 3.50024C9.5 3.50024 10 2.5 12 2.5C14 2.5 14.5 3.5 14.5 3.5" stroke="#A7A7A7"
+											stroke-linecap="round" />
+									</svg>
+								</button>
+								<div class="counter">
+									<button class="decrement">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M18 12L6 12" stroke="#5F5F5F" stroke-linecap="round" />
+										</svg>
+									</button>
+									<div class="count">0</div>
+									<div class="increment">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M12 6L12 18" stroke="#5F5F5F" stroke-linecap="round" />
+											<path d="M18 12L6 12" stroke="#5F5F5F" stroke-linecap="round" />
+										</svg>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="component_product">
+							<div class="product-id">МК000002494</div>
+							<div class="product-image">
+								<img src="images/products/mini.png" loading="lazy" alt="">
+							</div>
+							<div class="product-name">Замок накладной Apecs 0556-C-BN</div>
+							<div class="product-price">
+								<div class="new-price">2 300₽</div>
+								<div class="old-price">2 500₽</div>
+							</div>
+							<div class="delete-and-counter">
+								<button class="delete">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M9.5 14.5L9.5 11.5" stroke="#A7A7A7" stroke-linecap="round" />
+										<path d="M14.5 14.5L14.5 11.5" stroke="#A7A7A7" stroke-linecap="round" />
+										<path
+											d="M3 6.5H21C19.5955 6.5 18.8933 6.5 18.3889 6.83706C18.1705 6.98298 17.983 7.17048 17.8371 7.38886C17.5 7.89331 17.5 8.59554 17.5 10V15.5C17.5 17.3856 17.5 18.3284 16.9142 18.9142C16.3284 19.5 15.3856 19.5 13.5 19.5H10.5C8.61438 19.5 7.67157 19.5 7.08579 18.9142C6.5 18.3284 6.5 17.3856 6.5 15.5V10C6.5 8.59554 6.5 7.89331 6.16294 7.38886C6.01702 7.17048 5.82952 6.98298 5.61114 6.83706C5.10669 6.5 4.40446 6.5 3 6.5Z"
+											stroke="#A7A7A7" stroke-linecap="round" />
+										<path d="M9.5 3.50024C9.5 3.50024 10 2.5 12 2.5C14 2.5 14.5 3.5 14.5 3.5" stroke="#A7A7A7"
+											stroke-linecap="round" />
+									</svg>
+								</button>
+								<div class="counter">
+									<button class="decrement">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M18 12L6 12" stroke="#5F5F5F" stroke-linecap="round" />
+										</svg>
+									</button>
+									<div class="count">0</div>
+									<div class="increment">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M12 6L12 18" stroke="#5F5F5F" stroke-linecap="round" />
+											<path d="M18 12L6 12" stroke="#5F5F5F" stroke-linecap="round" />
+										</svg>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="component_product">
+							<div class="product-id">МК000002494</div>
+							<div class="product-image">
+								<img src="images/products/mini.png" loading="lazy" alt="">
+							</div>
+							<div class="product-name">Замок накладной Apecs 0556-C-BN</div>
+							<div class="product-price">
+								<div class="new-price">2 300₽</div>
+								<div class="old-price">2 500₽</div>
+							</div>
+							<div class="delete-and-counter">
+								<button class="delete">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M9.5 14.5L9.5 11.5" stroke="#A7A7A7" stroke-linecap="round" />
+										<path d="M14.5 14.5L14.5 11.5" stroke="#A7A7A7" stroke-linecap="round" />
+										<path
+											d="M3 6.5H21C19.5955 6.5 18.8933 6.5 18.3889 6.83706C18.1705 6.98298 17.983 7.17048 17.8371 7.38886C17.5 7.89331 17.5 8.59554 17.5 10V15.5C17.5 17.3856 17.5 18.3284 16.9142 18.9142C16.3284 19.5 15.3856 19.5 13.5 19.5H10.5C8.61438 19.5 7.67157 19.5 7.08579 18.9142C6.5 18.3284 6.5 17.3856 6.5 15.5V10C6.5 8.59554 6.5 7.89331 6.16294 7.38886C6.01702 7.17048 5.82952 6.98298 5.61114 6.83706C5.10669 6.5 4.40446 6.5 3 6.5Z"
+											stroke="#A7A7A7" stroke-linecap="round" />
+										<path d="M9.5 3.50024C9.5 3.50024 10 2.5 12 2.5C14 2.5 14.5 3.5 14.5 3.5" stroke="#A7A7A7"
+											stroke-linecap="round" />
+									</svg>
+								</button>
+								<div class="counter">
+									<button class="decrement">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M18 12L6 12" stroke="#5F5F5F" stroke-linecap="round" />
+										</svg>
+									</button>
+									<div class="count">0</div>
+									<div class="increment">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M12 6L12 18" stroke="#5F5F5F" stroke-linecap="round" />
+											<path d="M18 12L6 12" stroke="#5F5F5F" stroke-linecap="round" />
+										</svg>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="component_product">
+							<div class="product-id">МК000002494</div>
+							<div class="product-image">
+								<img src="images/products/mini.png" loading="lazy" alt="">
+							</div>
+							<div class="product-name">Замок накладной Apecs 0556-C-BN</div>
+							<div class="product-price">
+								<div class="new-price">2 300₽</div>
+								<div class="old-price">2 500₽</div>
+							</div>
+							<div class="delete-and-counter">
+								<button class="delete">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M9.5 14.5L9.5 11.5" stroke="#A7A7A7" stroke-linecap="round" />
+										<path d="M14.5 14.5L14.5 11.5" stroke="#A7A7A7" stroke-linecap="round" />
+										<path
+											d="M3 6.5H21C19.5955 6.5 18.8933 6.5 18.3889 6.83706C18.1705 6.98298 17.983 7.17048 17.8371 7.38886C17.5 7.89331 17.5 8.59554 17.5 10V15.5C17.5 17.3856 17.5 18.3284 16.9142 18.9142C16.3284 19.5 15.3856 19.5 13.5 19.5H10.5C8.61438 19.5 7.67157 19.5 7.08579 18.9142C6.5 18.3284 6.5 17.3856 6.5 15.5V10C6.5 8.59554 6.5 7.89331 6.16294 7.38886C6.01702 7.17048 5.82952 6.98298 5.61114 6.83706C5.10669 6.5 4.40446 6.5 3 6.5Z"
+											stroke="#A7A7A7" stroke-linecap="round" />
+										<path d="M9.5 3.50024C9.5 3.50024 10 2.5 12 2.5C14 2.5 14.5 3.5 14.5 3.5" stroke="#A7A7A7"
+											stroke-linecap="round" />
+									</svg>
+								</button>
+								<div class="counter">
+									<button class="decrement">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M18 12L6 12" stroke="#5F5F5F" stroke-linecap="round" />
+										</svg>
+									</button>
+									<div class="count">0</div>
+									<div class="increment">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M12 6L12 18" stroke="#5F5F5F" stroke-linecap="round" />
+											<path d="M18 12L6 12" stroke="#5F5F5F" stroke-linecap="round" />
+										</svg>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="component_product">
+							<div class="product-id">МК000002494</div>
+							<div class="product-image">
+								<img src="images/products/mini.png" loading="lazy" alt="">
+							</div>
+							<div class="product-name">Замок накладной Apecs 0556-C-BN</div>
+							<div class="product-price">
+								<div class="new-price">2 300₽</div>
+								<div class="old-price">2 500₽</div>
+							</div>
+							<div class="delete-and-counter">
+								<button class="delete">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M9.5 14.5L9.5 11.5" stroke="#A7A7A7" stroke-linecap="round" />
+										<path d="M14.5 14.5L14.5 11.5" stroke="#A7A7A7" stroke-linecap="round" />
+										<path
+											d="M3 6.5H21C19.5955 6.5 18.8933 6.5 18.3889 6.83706C18.1705 6.98298 17.983 7.17048 17.8371 7.38886C17.5 7.89331 17.5 8.59554 17.5 10V15.5C17.5 17.3856 17.5 18.3284 16.9142 18.9142C16.3284 19.5 15.3856 19.5 13.5 19.5H10.5C8.61438 19.5 7.67157 19.5 7.08579 18.9142C6.5 18.3284 6.5 17.3856 6.5 15.5V10C6.5 8.59554 6.5 7.89331 6.16294 7.38886C6.01702 7.17048 5.82952 6.98298 5.61114 6.83706C5.10669 6.5 4.40446 6.5 3 6.5Z"
+											stroke="#A7A7A7" stroke-linecap="round" />
+										<path d="M9.5 3.50024C9.5 3.50024 10 2.5 12 2.5C14 2.5 14.5 3.5 14.5 3.5" stroke="#A7A7A7"
+											stroke-linecap="round" />
+									</svg>
+								</button>
+								<div class="counter">
+									<button class="decrement">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M18 12L6 12" stroke="#5F5F5F" stroke-linecap="round" />
+										</svg>
+									</button>
+									<div class="count">0</div>
+									<div class="increment">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M12 6L12 18" stroke="#5F5F5F" stroke-linecap="round" />
+											<path d="M18 12L6 12" stroke="#5F5F5F" stroke-linecap="round" />
+										</svg>
+									</div>
+								</div>
+							</div>
+						</article>
+					</section>
+					<form class="form" action="#">
+						<div class="group">
+							<div class="g-title">Способ доставки</div>
+							<div class="g-flex">
+								<label class="g-checkbox">
+									<input type="radio" name="delivery_method" class="hidden" checked>
+									<img src="images/icons/checkbox-unchecked.svg" class="_unchecked" alt="">
+									<img src="images/icons/checkbox-checked.svg" class="_checked" alt="">
+									<span>Курьерской службой</span>
+								</label>
+								<label class="g-checkbox">
+									<input type="radio" name="delivery_method" class="hidden">
+									<img src="images/icons/checkbox-unchecked.svg" class="_unchecked" alt="">
+									<img src="images/icons/checkbox-checked.svg" class="_checked" alt="">
+									<span>Самовывоз со склада</span>
+								</label>
+							</div>
+						</div>
+						<div class="group">
+							<div class="g-title">Способ оплаты</div>
+							<div class="g-flex">
+								<label class="g-checkbox">
+									<input type="radio" name="payment_method" class="hidden" checked>
+									<img src="images/icons/checkbox-unchecked.svg" class="_unchecked" alt="">
+									<img src="images/icons/checkbox-checked.svg" class="_checked" alt="">
+									<span>Наличными</span>
+								</label>
+								<label class="g-checkbox">
+									<input type="radio" name="payment_method" class="hidden">
+									<img src="images/icons/checkbox-unchecked.svg" class="_unchecked" alt="">
+									<img src="images/icons/checkbox-checked.svg" class="_checked" alt="">
+									<span>Картой</span>
+								</label>
+								<label class="g-checkbox">
+									<input type="radio" name="payment_method" class="hidden">
+									<img src="images/icons/checkbox-unchecked.svg" class="_unchecked" alt="">
+									<img src="images/icons/checkbox-checked.svg" class="_checked" alt="">
+									<span>По счету</span>
+								</label>
+							</div>
+						</div>
+
+						<div class="group">
+							<div class="g-title">Способ доставки</div>
+							<div>
+								<div class="input-label">Адрес доставки</div>
+								<input type="text" class="component_input" placeholder="Г. Пятигорск,Черкесское шоссе, д. 56 " required>
+							</div>
+						</div>
+
+						<div class="group">
+							<div class="g-title">Личные даные</div>
+							<p class="g-text">Проверьте свои данные, чтобы быть в курсе изменений в статусе заказа</p>
+							<div class="input-grid">
+								<div>
+									<div class="input-label">Имя</div>
+									<input type="text" class="component_input" placeholder="Иван">
+								</div>
+								<div>
+									<div class="input-label">Фамилия</div>
+									<input type="text" class="component_input" placeholder="Иванов">
+								</div>
+								<div>
+									<div class="input-label">Телефон</div>
+									<input type="text" class="component_input" placeholder="8 800 888 88 08">
+								</div>
+								<div>
+									<div class="input-label">Почта</div>
+									<input type="text" class="component_input" placeholder="Ivanov.453@mail.ru">
+								</div>
+							</div>
+						</div>
+						<div class="final-desk">
+							<div class="info">
+								<span>Товаров</span>
+								<span>12</span>
+							</div>
+							<div class="info">
+								<span>Доставка</span>
+								<span>0₽</span>
+							</div>
+							<div class="info">
+								<span>Скидка</span>
+								<span class="_purple">-450₽</span>
+							</div>
+							<div class="total">
+								<span>Итого</span>
+								<span>35 799 руб.</span>
+							</div>
+							<button class="submit">Оформить заказ</button>
+							<p class="PP">
+								Продолжая, вы соглашаетеесь с Политикой конфеденциальности и Договора оферты, включая Политику
+								возврата
+								товара
+							</p>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="container">
+			<div class="logo">
+				<img src="images/logo.webp" loading="lazy" alt="">
+			</div>
+			<div class="lists">
+				<div class="list">
+					<h5 class="list-title">Каталог</h5>
+					<a href="" class="list-item">Дверные замки</a>
+					<a href="" class="list-item">Дверные ручки</a>
+					<a href="" class="list-item">Фурнитура</a>
+					<a href="" class="list-item">Разное</a>
+				</div>
+				<div class="list">
+					<h5 class="list-title">Клиентам</h5>
+					<a href="" class="list-item">О компании</a>
+					<a href="" class="list-item">Статьи</a>
+					<a href="" class="list-item">Новости</a>
+					<a href="" class="list-item">Партнерам</a>
+					<a href="" class="list-item">Коллекции</a>
+				</div>
+				<div class="list">
+					<h5 class="list-title">Компания</h5>
+					<a href="" class="list-item">Контакты</a>
+					<a href="" class="list-item">Политика <br> конфиденциальности</a>
+					<a href="" class="list-item">Оферта</a>
+				</div>
+				<div class="list">
+					<h5 class="list-title">Контакты</h5>
+					<span class="list-item">+7 928 36 222 85</span>
+					<span class="list-item">г. Пятигорск, Черкесское <br> шоссе, д. 56</span>
+					<span class="list-item">info@zamki-opt.ru</span>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/index.js"></script>
+</body>
+
+</html>

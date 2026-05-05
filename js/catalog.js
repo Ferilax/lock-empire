@@ -3,7 +3,6 @@
 	const title = document.querySelector("h1")
 
 	const url = new URL(window.location.href)
-	const params = new URLSearchParams()
 
 	categoryList.addEventListener("click", (e) => {
 		const clickedOption = e.target.closest(".option")
