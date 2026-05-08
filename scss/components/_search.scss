@@ -5,6 +5,13 @@
 	padding: 0 24px;
 	border-radius: 100px;
 	color: #0041B3;
+	position: relative;
+
+	&:has(input:focus) {
+		.component_search__results {
+			display: flex;
+		}
+	}
 
 	input {
 		width: 140px;
@@ -17,6 +24,50 @@
 
 		&::placeholder {
 			color: #A7A7A7;
+		}
+	}
+
+	.component_search__results {
+		display: none;
+
+		position: absolute;
+		top: calc(100% + 24px);
+		z-index: var(--z-header);
+		right: 0;
+
+		background: #F2F2F2;
+		border-radius: 18px;
+		max-width: 372px;
+		width: calc(100vw - var(--container-padding) * 2);
+
+		padding: 32px;
+		color: #696969;
+
+		flex-direction: column;
+		gap: 12px;
+		line-height: 1.4;
+		font-size: 20px;
+	}
+
+	.component_search__result {
+		&:hover {
+			color: #0041B3;
+		}
+	}
+
+	.component_search__see-all {
+		@extend %button-white;
+		background: white;
+		width: 100%;
+		padding: 0;
+	}
+
+	@media (width < 375px) {
+		padding: 0 12px;
+
+		input {
+			padding-right: 4px;
+			width: 120px;
 		}
 	}
 }

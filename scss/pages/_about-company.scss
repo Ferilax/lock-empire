@@ -131,9 +131,9 @@ main {
 
 		img {
 			mix-blend-mode: multiply;
-			max-width: 90%;
 			object-fit: contain;
 
+			max-width: 90%;
 			max-height: 100%;
 		}
 	}
@@ -204,6 +204,12 @@ main {
 
 		.icon-point {
 			flex: 0 0 142px;
+		}
+	}
+
+	@media (width < 375px) {
+		.points {
+			grid-template-columns: 1fr;
 		}
 	}
 }

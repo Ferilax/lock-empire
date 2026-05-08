@@ -119,6 +119,33 @@
 			translate: 16px -50%;
 		}
 	}
+
+	@media (width < 400px) {
+		.splide__slide {
+			padding: 16px;
+
+			&:nth-child(1) {
+
+				.button {
+					@extend %button-white;
+					padding: 0;
+					width: 100%;
+				}
+			}
+		}
+
+		.button {
+			padding: 0;
+			width: 100%;
+		}
+
+	}
+
+	@media (width < 375px) {
+		.title {
+			font-size: 28px;
+		}
+	}
 }
 
 .start-catalog {
@@ -137,8 +164,6 @@
 		@extend %bg;
 		z-index: -1;
 	}
-
-	.container {}
 
 	.title {
 		color: var(--black);
